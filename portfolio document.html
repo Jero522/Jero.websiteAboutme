@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Design</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            display: flex;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 250px;
+            background: var(--primary);
+            height: 100vh;
+            position: fixed;
+            color: white;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        nav h2 { font-size: 1.2rem; border-bottom: 1px solid #555; padding-bottom: 10px; }
+
+        nav a {
+            display: block;
+            color: #bdc3c7;
+            text-decoration: none;
+            padding: 10px 0;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--secondary); }
+
+        /* Main Content Area */
+        main {
+            margin-left: 290px;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h1, h2 { color: var(--primary); }
+        
+        .title-page { text-align: center; padding: 60px 20px; }
+        .title-page h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 40px; text-align: left; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+
+        .tag {
+            background: var(--secondary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body { flex-direction: column; }
+            nav { width: 100%; height: auto; position: relative; }
+            main { margin-left: 0; padding: 20px; }
+            .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>Documentation</h2>
+    <a href="#title">1. Title Page</a>
+    <a href="#intro">2. Introduction</a>
+    <a href="#objectives">3. Objectives</a>
+    <a href="#scope">4. Scope</a>
+    <a href="#tools">5. Tools</a>
+    <a href="#system">6. Requirements</a>
+    <a href="#design">7. Design Structure</a>
+    <a href="#features">8. Features</a>
+    <a href="#challenges">9. Challenges</a>
+    <a href="#conclusion">10. Conclusion</a>
+</nav>
+
+<main>
+    <section id="title" class="title-page">
+        <style>
+    .profile-img {
+        width: 640px;
+        height: 640px;
+        border-radius: 50%; /* Makes it circular */
+        border: 4px solid var(--secondary);
+        float: right; /* Wraps text around the image */
+        margin-left: 20px;
+        margin-bottom: 10px;
+        object-fit: cover; /* Prevents stretching */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Clearfix to prevent layout breaking from the float */
+    .intro-container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<section id="intro">
+    <div class="intro-container">
+        <img src="8F9954CC-4D44-4B6D-862F-80EF9998DB41.jpg" alt="Your Name" class="profile-img">
+    </div>
+</section>
+        <h1>Portfolio Website Design</h1>
+        <p>A comprehensive technical report on web development</p>
+        <div class="info-grid">
+            <div>
+                <p><strong>Name:</strong> Thanawat Srila</p>
+                <p><strong>Course:</strong> Computer</p>
+            </div>
+            <div>
+                <p><strong>Instructor:</strong> Jaimer Aspillaga</p>
+                <p><strong>School:</strong> Phitsanulok Pittayakom</p>
+                <p><strong>Date:</strong> February 18, 2026</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="intro">
+        <h2>2. Introduction</h2>
+        <p>This project involves the design and development of a professional personal portfolio website. The site acts as a digital resume, showcasing technical skills, previous projects, and educational background in an interactive format that a standard paper document cannot provide.</p>
+    </section>
+
+    <section id="objectives">
+        <h2>3. Objectives</h2>
+        <ul>
+            <li>To design a responsive website that adapts to mobile, tablet, and desktop screens.</li>
+            <li>To implement semantic HTML5 and modern CSS3 styling techniques.</li>
+            <li>To showcase real-world projects with interactive galleries.</li>
+            <li>To gain proficiency in debugging and cross-browser testing.</li>
+        </ul>
+    </section>
+
+    <section id="scope">
+        <h2>4. Scope of the Project</h2>
+        <p>The website is built as a Single Page Application (SPA) structure comprising the following components:</p>
+        <ul>
+            <li><strong>Home:</strong> Dynamic hero section with a brief intro.</li>
+            <li><strong>About Me:</strong> Coding and professional Editing.</li>
+             <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>PortfolioAboutme.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2024 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>Phitsanulok Pittayakom</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Jakarnboon School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2024</h6>
+          <p>Middle School</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Rojanawit Elementary School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2018</h6>
+          <p>Kindergarten</p><br>
+        </div>
+            <li><strong>Skills:</strong> A visual grid of Coding I master.</li>
+            <img src="FA5A543D-DEC5-4B46-BA7B-0DFF88E3BE0F.jpg" alt="Skills Chart" style="width:100%; max-width:400px; margin: 20px 0;">
+            <li><strong>Projects:</strong> A portfolio gallery with image links and descriptions.</li>
+            <li><strong>Contact:</strong> thanawat.srila555@gmail.com</li>
+            <div class="w3-half w3-teal w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-padding-large">
+      <h1>Contact</h1>
+      <p class="w3-opacity">GET IN TOUCH</p>
+      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+        </ul>
+    </section>
+
+    <section id="tools">
+        <h2>5. Tools and Technologies Used</h2>
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript (ES6+)</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">GitHub</span>
+        <p style="margin-top:15px;">Development was primarily handled in <strong>Visual Studio Code</strong>, utilizing live-server extensions for real-time testing in <strong>Google Chrome</strong>.</p>
+    </section>
+
+    <section id="system">
+        <h2>6. System Requirements</h2>
+        <h3>Hardware</h3>
+        <ul>
+            <li><strong>Laptop (8GB RAM)</strong></li>
+            <li>Internet Access for asset hosting (Google Fonts/Icons)</li>
+        </ul>
+        <h3>Software</h3>
+        <ul>
+            <li>Modern Web Browser (Chrome, Firefox, or Edge)</li>
+            <li>Code Editor (VS Code recommended)</li>
+        </ul>
+    </section>
+
+    <section id="design">
+        <h2>7. Website Design Structure</h2>
+        <p>The layout follows a logical vertical flow to maintain user engagement:</p>
+        
+        <ol>
+            <li><strong>Header:</strong> Contains the navigation menu with smooth-scroll links.</li>
+            <li><strong>Hero:</strong> A high-contrast section to grab immediate attention.</li>
+            <li><strong>Main Content:</strong> Modular sections for ease of reading.</li>
+            <li><strong>Footer:</strong> Social links and copyright information.</li>
+        </ol>
+    </section>
+
+    <section id="features">
+        <h2>8. Features of the Website</h2>
+        <ul>
+            <li><strong>Responsive Design:</strong> Fluid layouts using CSS Flexbox and Grid.</li>
+            <li><strong>Smooth Scrolling:</strong> Enhanced navigation experience via JavaScript.</li>
+            <li><strong>Modern UI:</strong> Clean aesthetics with a focus on typography and whitespace.</li>
+            <li><strong>Form Validation:</strong> Prevents submission of empty or invalid contact entries.</li>
+        </ul>
+    </section>
+
+    <section id="challenges">
+        <h2>9. Challenges Faced</h2>
+        <p>During development, I encountered a major challenge with <strong>CSS alignment</strong> in the project gallery. I initially struggled with overlapping elements, but resolved this by switching from traditional floats to <strong>CSS Grid</strong>. Additionally, making the navigation menu collapse into a "hamburger" menu for mobile required extensive testing of media queries.</p>
+    </section>
+
+    <section id="conclusion">
+        <h2>10. Conclusion</h2>
+        <p>The completion of this portfolio project has significantly improved my front-end development workflow. Beyond the technical code, I learned the importance of user experience (UX) and the value of clear documentation. This site will serve as a living project that I will update as my career progresses.</p>
+        
+        <h3>Future Improvements</h3>
+        <ul>
+            <li>Integration of a back-end (Node.js) to store form messages in a database.</li>
+            <li>Adding "Dark Mode" functionality for user preference.</li>
+            <li>Optimizing page speed by implementing lazy-loading for project images.</li>
+            <footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.portfolioAboutme.com/P2i/default.asp" target="_blank">P2i</a></p>
+</footer>
+
+        </ul>
+    </section>
+</main>
+
+</body>
+</html>
